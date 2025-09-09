@@ -322,6 +322,7 @@ static inline vint_t VEC_MOD_I_SCALAR(vint_t a, vint_t b) {
 #else
     return a % b;
 #endif
+}
 
 /* --------------- vint_t和vfloat_t之间互相转换 ---------------- */
 /* x86 SSE/AVX */
