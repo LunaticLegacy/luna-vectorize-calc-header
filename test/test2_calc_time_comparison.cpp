@@ -8,9 +8,10 @@ constexpr size_t N = 1 << 20; // 1M elements
 
 int main() {
     // Memory alignment
-    float* array1 = reinterpret_cast<float*>(std::malloc(sizeof(float) * N));
-    float* array2 = reinterpret_cast<float*>(std::malloc(sizeof(float) * N));
-    float* result = reinterpret_cast<float*>(std::malloc(sizeof(float) * N));
+    float* array1 = new float[N];
+    float* array2 = new float[N];
+    float* result = new float[N];
+
 
     if (!array1 || !array2 || !result) {
         std::cerr << "Memory allocation failed\n";
@@ -61,9 +62,9 @@ int main() {
     std::cout << "\n";
 
     // free mem
-    std::free(array1);
-    std::free(array2);
-    std::free(result);
+    delete[] array1;
+    delete[] array2;
+    delete[] result;
 
     return 0;
 }
