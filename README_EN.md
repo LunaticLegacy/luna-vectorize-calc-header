@@ -23,7 +23,7 @@ This header provides the following macros:
 | `vfloat32_t` | float SIMD vector type | Single-precision floating point vector, e.g., AVX/SSE/NEON |
 | `vint_t` | int SIMD vector type | Integer vector type |
 | `vmask_t` | int / mask vector type | Used for conditional mask operations |
-| `VEC_WIDTH` | int | Float vector width (file-scope macro, user can access via interface) |
+| `VEC_WIDTH` | int | Float vector width in current platform (file-scope macro, user can access via interface) |
 
 ## 2. Macro / Function Table
 

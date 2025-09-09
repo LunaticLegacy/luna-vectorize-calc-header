@@ -24,7 +24,7 @@ English doc: [README_EN.md](README_EN.md)
 | `vfloat32_t` | float SIMD 向量类型  | 单精度浮点向量类型，例如 AVX/SSE/NEON |
 | `vint_t`| int SIMD 向量类型    | 整数向量类型                    |
 | `vmask_t` | int / mask 向量类型  | 用于条件掩码运算                  |
-| `VEC_WIDTH` | int | 浮点向量宽度（单文件作用域，用户可通过接口访问）  |
+| `VEC_WIDTH` | int | 当前平台下浮点向量宽度（单文件作用域，用户可通过接口访问）  |
 
 ## 2. 宏函数定义表
 
